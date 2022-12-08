@@ -1,0 +1,405 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --normalText: hwb(0 0% 100% / 0.900);
+  --normalFontSize: 2.5vw;
+}
+
+@font-face {
+    font-family: 'Material-Symbols';
+    src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v68/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
+    font-size: 2.5vw;
+  }
+  
+  .material-symbols {
+    font-family: 'Material-Symbols';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+body {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+h5 {
+    margin-right: 0px;
+    margin-top: 0.8rem;
+    margin-left: 0.2rem;
+    color: gray;
+    font-size: var(--normalFontSize);
+    font-weight: 500;
+
+}
+
+.input-hr {
+  width: 100%;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  box-shadow: 0px 1px 1px lightgrey;
+
+}
+
+.break {
+  border-style: dashed;
+  border-color: gray;
+  border-width: 1px;
+
+
+}
+
+span {
+  color: var(--normalText);
+  font-size: var(--normalFontSize);
+
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+  color: none;
+
+}
+
+.app {
+  height: 40vh;
+  background-color: white;
+
+}
+
+#app1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+#erro {
+  text-align: center;
+  background-color: tomato;
+  color: white;
+  width: 100%;
+
+
+}
+
+.write-message-column span {
+padding-right: 0.7vw;
+
+}
+
+.write-message-column {
+  display: flex;
+  flex-direction: column;
+  height: 93%;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 93%;
+
+}
+
+.write-message-sendto-row, .write-message-from-row, .write-message-subject-row {
+  display: flex;
+
+}
+
+.write-message-message-row {
+  height: 100%;
+
+}
+
+textarea::placeholder { 
+  flex-grow: 1;
+  resize: none;
+  font-size: var(--normalFontSize);
+  border-style: none;
+  color: gray;
+
+ }
+
+textarea { 
+  flex-grow: 1;
+  resize: none;
+  border-style: none;
+  font-size: var(--normalFontSize);
+  color: black;
+  
+ }
+
+ textarea:focus { 
+  flex-grow: 1;
+  resize: none;
+  border-style: none;
+  outline: none;
+  font-size: var(--normalFontSize);
+  color: black;
+
+ }
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.top-row-right-buttons {
+  display: flex;
+  
+}
+
+.top-row-right-buttons .material-symbols {
+  padding-left: 2.5vw;
+  
+}
+
+.search-bar-column {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.search-bar-row {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    border-color: lightgray;
+    box-shadow: 0rem 0.2vw 0.5vw gray;
+
+}
+
+input[type="text"], input[type="text"]:focus {
+    flex: 1;
+    height: 3vw;
+    border-style: none;
+    outline: none;
+    width: 100%;
+    font-size: 2.7vw;
+
+}
+
+.search-bar-row .material-symbols {
+    font-family: 'Material-Symbols';
+    font-weight: normal;
+    font-style: normal;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    font-size: 4.3vw;
+  }
+
+  .search-bar-row .search-bar-round-image {
+    background-color: lightgray;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  .emails-column {
+    margin-bottom: 1rem;
+
+  }
+
+  .no-email {
+    text-align: center;
+
+  }
+ 
+  .emails-row {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+  }
+
+  .emails-row .emails-image {
+    background-color: lightgray;
+    height: 7.40vw;
+    width: 7.40vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .emails-row p {
+    margin: 0px;
+    font-size: 2.7vw;
+    margin-left: 3vw;
+    
+  }
+
+  .emails-row .material-symbols {
+    font-size: 4.5vw;
+    font-style: normal;
+    font-weight: 100;
+    
+  }
+
+  .emails-content-column, .emails-tail-column {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .emails-content-column {
+    flex: 1;
+    margin-bottom: 1.5vh;
+    
+  }
+
+  .emails-tail-column {
+    align-items: flex-end;
+    justify-content: space-around;
+
+  }
+
+   /* DESKTOP VERSION */ 
+   /*     STARTS      */ 
+   /*      HERE       */ 
+
+  @media (min-width: 830px) {
+
+    :root {
+      --normalFontSize: 18px;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+    }
+
+    h5 {
+      margin-right: 0px;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      margin-left: 12px;
+      font-size: 18px;
+  
+  }
+    
+
+    .main-div {
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .app {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      height: calc(100vh - 1px);
+      
+    }
+
+    #app1 {
+      flex: 4;
+      margin-right: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
+      
+    }
+
+    #app2 {
+      flex: 5;
+      margin-left: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
+      
+    }
+
+    .app::-webkit-scrollbar, .emails-column::-webkit-scrollbar { 
+      display: none;  /* Safari and Chrome */
+    }
+
+
+    textarea::placeholder {
+      font-size: 18px;
+    
+     }
+    
+    textarea { 
+      font-size: 18px;
+    
+     }
+    
+     textarea:focus { 
+      font-size: 18px;
+
+     }
+
+     .top-row-right-buttons .material-symbols {
+      padding-left: 18px;
+      
+    }
+
+    .search-bar-row {
+      padding: 1px;
+      box-shadow: 0px 3px 5px #80808086;
+  
+    }
+
+    input[type="text"], input[type="text"]:focus {
+      height: 32px;
+      font-size: 18px;
+
+    }
+
+    .search-bar-row .material-symbols {
+      padding-left: 18px;
+      padding-right: 18px;
+      font-size: 28px;
+
+    }
+
+    .search-bar-row .search-bar-round-image {
+      height: 32px;
+      width: 32px;
+
+    }
+
+    .emails-column {
+      overflow: scroll;
+      height: 100%;
+      margin-bottom: 2px;
+
+    }
+
+    .emails-row .emails-image {
+      height: 50px;
+      width: 50px;
+  
+    }
+
+    .emails-row .material-symbols {
+      font-size: 28px;
+      
+    }
+
+    .emails-row p {
+      font-size: 18px;
+      margin-left: 18px;
+      
+    }
+
+  }
